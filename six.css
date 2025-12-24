@@ -1,0 +1,16 @@
+.external-box {
+  background-color: rgb(239, 188, 133);
+  padding: 15px;
+  border: 2px solid navy;
+  border-radius: 10px;
+}
+
+.external-box h3 {
+  color: darkblue;
+  text-align: center;
+}
+
+.external-box p {
+  font-size: 17px;
+  color: darkgreen;
+}
