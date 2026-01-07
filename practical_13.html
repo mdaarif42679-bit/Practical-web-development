@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript User Defined Functions & Scope</title>
+</head>
+<body>
+
+    <h1>JavaScript User-Defined Functions & Scope Demonstration</h1>
+    <p>Open Console to see output</p>
+    <script>
+        function addNumbers(a, b) {
+            return a + b;
+        }
+
+        let sum = addNumbers(10, 20);
+        console.log("Sum is:", sum);
+
+        var multiplyNumbers = function (x, y) {
+            return x * y;
+        };
+
+        console.log("Multiplication is:", multiplyNumbers(5, 4));
+
+        const greetUser = (name) => {
+            return "Hello, " + name;
+        };
+
+        console.log(greetUser("Aarif"));
+
+        var globalVar = "I am global variable";
+
+        function scopeTest() {
+            var functionVar = "I am function scoped";
+            console.log(functionVar);
+        }
+        scopeTest();
+
+        if (true) {
+            let blockLet = "I am block scoped (let)";
+            const blockConst = "I am block scoped (const)";
+            console.log(blockLet);
+            console.log(blockConst);
+        }
+
+        var x = 10;
+        var x = 20;
+        console.log("var value:", x);
+
+        let y = 30;
+        y = 40;
+        console.log("let value:", y);
+
+        const z = 50;
+        console.log("const value:", z);
+    </script>
+
+</body>
+</html>

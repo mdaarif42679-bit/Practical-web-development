@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Demo</title>
+</head>
+<body>
+
+    <h2 id="title">Original Title</h2>
+
+    <p class="text">This is original paragraph</p>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            var heading = document.getElementById("title");
+            heading.innerHTML = "Title Changed using getElementById()";
+
+            var para = document.querySelector(".text");
+            para.innerHTML = "Paragraph changed using querySelector()";
+
+            document.querySelector("body").innerHTML += "<p>New paragraph added using innerHTML</p>";
+        }
+    </script>
+
+</body>
+</html>

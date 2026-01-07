@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Show Hide and Toggle CSS Class</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            color: white;
+            background-color: #007bff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Show / Hide Example</h2>
+
+    <p id="content">
+        This content can be shown or hidden using JavaScript.
+    </p>
+
+    <button onclick="toggleContent()">Show / Hide Content</button>
+    <button onclick="toggleStyle()">Toggle Style</button>
+
+    <script>
+        function toggleContent() {
+            document.getElementById("content").classList.toggle("hidden");
+        }
+
+        function toggleStyle() {
+            document.getElementById("content").classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>
